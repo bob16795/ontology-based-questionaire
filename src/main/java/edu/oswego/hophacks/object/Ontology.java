@@ -106,9 +106,9 @@ public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<N
             for (Object o : nodes) {
                 JSONObject nodeObject = (JSONObject) o;
 
-                String name = (String) nodeObject.get("content");
+                String nameID = (String) nodeObject.get("content");
                 String uri = (String) nodeObject.get("uri");
-                allnodes.add(new Node(name, uri));
+                allnodes.add(new Node(nameID, uri));
             }
 
             //Add edges to alledges array
