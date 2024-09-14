@@ -1,6 +1,5 @@
 package edu.oswego.hophacks.object;
 
-
 import java.io.*;
 
 import com.sun.tools.javac.Main;
@@ -10,7 +9,12 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
+@SuppressWarnings("unchecked")
 public class Ontology {
 public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<Node> total) {
     ArrayList<Node> destNodes = new ArrayList<>();
@@ -66,7 +70,9 @@ public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<N
 
 
     public static <JsonObject> void main(String[] args) throws IOException {
+
         Hashtable<String, String> output = new Hashtable<>();
+
         ArrayList<Node> allnodes = new ArrayList<>();
         ArrayList<Edge> alledges = new ArrayList<>();
 
@@ -106,9 +112,12 @@ public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<N
             for (Object o : nodes) {
                 JSONObject nodeObject = (JSONObject) o;
 
+
                 String nameID = (String) nodeObject.get("content");
                 String uri = (String) nodeObject.get("uri");
                 allnodes.add(new Node(nameID, uri));
+
+
             }
 
             //Add edges to alledges array
@@ -177,6 +186,18 @@ public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<N
         int conditionIndex = 0;
         //Loop until there are no other conditions to ask, or until we've asked a specific number of questions
         for (int i = 0; i < totalConditions.size() || totalConditions.size() == 1 + determinedConditions.size(); i++) {
+
+            System.out.println("Does the patient have " + totalConditions.get(conditionIndex) + "? (Yes/No)");
+            Scanner s = new Scanner(System.in);
+            String response = s.nextLine();
+
+            boolean question;
+            if (response.toLowerCase().equals("yes")) {
+                question = true;
+            } else {
+                question = false;
+            }
+
 
             Scanner s = new Scanner(System.in);
 
@@ -258,4 +279,4 @@ public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<N
             System.out.println("Patient appears to have no applicable conditions.");
         }
     }
-}
+    }
