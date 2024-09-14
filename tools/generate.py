@@ -97,7 +97,6 @@ for d, values in DIAGNOSIS_REQUIREMENTS.items():
             "obj": lut[sv],
         }]
 
-for f in sorted(L, key=lambda ):
 
 
 print(json.dumps(output, indent="    "))

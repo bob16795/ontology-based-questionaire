@@ -68,6 +68,9 @@ public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<N
 
 
     public static <JsonObject> void main(String[] args) throws IOException {
+        ArrayList<Node> allnodes = new ArrayList<>();
+        ArrayList<Edge> alledges = new ArrayList<>();
+
         //This is the arraylist for all condition nodes
         ArrayList<Node> totalConditions = new ArrayList<>();
         //This is the arraylist for the condition nodes that apply to the patient's situation
@@ -86,15 +89,57 @@ public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<N
             Object obj = jsonParser.parse(reader);
 
             JSONObject ontology = (JSONObject) obj;
-            JSONObject nodes = (JSONObject) ontology.get("nodes");
+            JSONArray nodes = (JSONArray) ontology.get("nodes");
+            JSONArray edges = (JSONArray) ontology.get("edges");
 
+            int idAssigner = 0;
 
+            //Add each node to the allnodes array
+            for (Object o : nodes) {
+                JSONObject nodeObject = (JSONObject) o;
+
+                String name = (String) nodeObject.get("content");
+                String uri = (String) nodeObject.get("uri");
+                allnodes.add(new Node(name, uri));
+            }
+
+            //Add edges to alledges array
+            for (Object o : edges) {
+                JSONObject edgeObject = (JSONObject) obj;
+                String source = (String) edgeObject.get("obj");
+                String dest = (String) edgeObject.get("subj");
+                String uri = (String) edgeObject.get("relation");
+
+                //Use idAssigner to get a unique id for each edge
+                int id = idAssigner;
+                idAssigner++;
+
+                Node sourceNode = null;
+                Node destNode = null;
+                //Find the correct dest and source nodes
+                for (Node n : allnodes) {
+                    if (source.equals(n.getURI())) {
+                        sourceNode = n;
+                    }
+                    if (dest.equals(n.getURI())) {
+                        destNode = n;
+                    }
+                }
+                if (sourceNode != null && destNode != null) {
+                    alledges.add(new Edge(sourceNode, destNode, id, uri));
+                } else { throw new Exception(); }
+            }
         } catch (ParseException ex) {
             throw new RuntimeException(ex);
+        } catch (Exception e) {
+            System.out.println("Error - edge failed to find node");
+            throw new RuntimeException(e);
         }
 
 
+
         //Initialize a ton of nodes. If we're doing something simple it might be worth hard-coding this honestly
+        /*
         Node conditions = new Node("Conditions", "URIPLACEHOLDER1");
         Node fever = new Node("fever", "URIPLACEHOLDER2");
         Node cough = new Node("cough", "URIPLACEHOLDER3");
@@ -109,7 +154,7 @@ public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<N
         Edge feverCause1 = new Edge(fever, skinInfection, "Cause", "URIPLACEHOLDER12");
         Edge feverCause2 = new Edge(fever, COVID, "Cause", "URIPLACEHOLDER13");
         Edge coughCause1 = new Edge(cough, commonCold, "Cause", "URIPLACEHOLDER14");
-        Edge coughCause2 = new Edge(cough, COVID, "Cause", "URIPLACEHOLDER15");
+        Edge coughCause2 = new Edge(cough, COVID, "Cause", "URIPLACEHOLDER15"); */
 
 
         //Always start with the same question
