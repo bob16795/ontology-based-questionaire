@@ -8,6 +8,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import java.util.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -46,7 +47,7 @@ public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<N
 
     //The node with the number of matches closest to half of the size of destNodes is the best node to determine next
     //This number can be adjusted without really breaking anything, so if my 5 am math is incorrect we can aim for more/less matches
-    double target = destNodes.size() / 2.0;
+    double target = destNodes.size();
 
     // Initialize variables to track the closest index and smallest difference
     double smallestDifference = Double.MAX_VALUE;
@@ -69,11 +70,23 @@ public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<N
 
 
     public static <JsonObject> void main(String[] args) throws IOException {
+
+        Hashtable<String, String> output = new Hashtable<>();
+
         ArrayList<Node> allnodes = new ArrayList<>();
         ArrayList<Edge> alledges = new ArrayList<>();
 
         //This is the arraylist for all condition nodes
         ArrayList<Node> totalConditions = new ArrayList<>();
+        //Create Name, Weight, Height, Age nodes
+        Node name = new Node("Name", "0");
+        totalConditions.add(name);
+        Node weight = new Node("Weight", "1");
+        totalConditions.add(weight);
+        Node height = new Node("Height", "2");
+        totalConditions.add(height);
+        Node age = new Node("Age", "3");
+        totalConditions.add(age);
         //This is the arraylist for the condition nodes that apply to the patient's situation
         ArrayList<Node> applicableConditions = new ArrayList<Node>();
         //This is the arraylist for the nodes whose questions have been asked
@@ -99,9 +112,12 @@ public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<N
             for (Object o : nodes) {
                 JSONObject nodeObject = (JSONObject) o;
 
-                String name = (String) nodeObject.get("content");
+
+                String nameID = (String) nodeObject.get("content");
                 String uri = (String) nodeObject.get("uri");
-                allnodes.add(new Node(name, uri));
+                allnodes.add(new Node(nameID, uri));
+
+
             }
 
             //Add edges to alledges array
@@ -170,6 +186,7 @@ public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<N
         int conditionIndex = 0;
         //Loop until there are no other conditions to ask, or until we've asked a specific number of questions
         for (int i = 0; i < totalConditions.size() || totalConditions.size() == 1 + determinedConditions.size(); i++) {
+
             System.out.println("Does the patient have " + totalConditions.get(conditionIndex) + "? (Yes/No)");
             Scanner s = new Scanner(System.in);
             String response = s.nextLine();
@@ -182,19 +199,55 @@ public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<N
             }
 
 
-            //Add it to the list of determined nodes
-            determinedConditions.add(totalConditions.get(i));
+            Scanner s = new Scanner(System.in);
+
+            if (conditionIndex == 0) {
+                System.out.println("What is your name?");
+                determinedConditions.add(totalConditions.get(i));
+                String out = s.nextLine();
+                output.put("What is your name?", out);
+            } else if (conditionIndex == 1) {
+                System.out.println("What is your weight?");
+                determinedConditions.add(totalConditions.get(i));
+                String out = s.nextLine();
+                output.put("What is your name?", out);
+            } else if (conditionIndex == 2) {
+                System.out.println("What is your height?");
+                determinedConditions.add(totalConditions.get(i));
+                String out = s.nextLine();
+                output.put("What is your name?", out);
+            } else if (conditionIndex == 3) {
+                System.out.println("What is your age?");
+                determinedConditions.add(totalConditions.get(i));
+                String out = s.nextLine();
+                output.put("What is your name?", out);
+            } else {
+                String questionAsk = "Does the patient have " + totalConditions.get(conditionIndex) + "? (Yes/No)";
+                System.out.println(questionAsk);
+                String response = s.nextLine();
+                output.put(questionAsk, response);
+
+                boolean question;
+                if (response.toLowerCase().equals("yes")) {
+                    question = true;
+                } else {
+                    question = false;
+                }
+
+                //Add it to the list of determined nodes
+                determinedConditions.add(totalConditions.get(i));
 
 
                 //If the question did not add an applicable condition, just move to the next question
-                if (applicableConditions.size() == 0 && !question) {
-                    conditionIndex = 1;
+                if (applicableConditions.isEmpty() && !question) {
+                    conditionIndex++;
                 } else {
                     //Add the applicable condition
                     applicableConditions.add(totalConditions.get(conditionIndex));
                     //Make sure the determined conditions aren't the same as the total conditions otherwise will have a bad time
                     if (totalConditions.size() > determinedConditions.size()) {
                         conditionIndex = totalConditions.indexOf(determineMostValuable(determinedConditions, totalConditions)); //Find the next question to ask
+                    }
                 }
             }
         }
