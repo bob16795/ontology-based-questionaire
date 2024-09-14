@@ -3,9 +3,9 @@ import java.util.ArrayList; // import the ArrayList class
 
 public class Edge {
     private String tag;
-    private String uri;
-    private Node source;
-    private Node dest;
+    private final String uri;
+    private final Node source;
+    private final Node dest;
 
     public Edge(Node source, Node destination, String tag, String URI) {
         this.source = source;

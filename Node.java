@@ -1,9 +1,9 @@
-import java.util.ArrayList; // import the ArrayList class
+import java.util.ArrayList;
 
 
 public class Node {
-    private String id;
-    private String uri;
+    private final String id;
+    private final String uri;
     private ArrayList<Edge> edges = new ArrayList<Edge>();
 
     public Node(String ID, String URI) {
@@ -26,11 +26,11 @@ public class Node {
     }
 
     //Compare how many edges two nodes have in common
-    public static int compareEdges(Node a, Node b) {
+    public static int compareEdges(Node a, Node b) throws InterruptedException {
 
         ArrayList<Edge> edgesA = a.getEdges();
         ArrayList<Edge> edgesB = b.getEdges();
-        if (edgesA.size() == 0 || edgesB.size() == 0) {
+        if (edgesA.isEmpty() || edgesB.isEmpty()) {
             return 0;
         }
 
@@ -39,19 +39,26 @@ public class Node {
         for (int i = 0; i < edgesA.size(); i++) {
             //get Edge A's destination URI
             String uriA = edgesA.get(i).getDest().getURI();
-            System.out.println("Current A edge URI: " + uriA);
+            // System.out.println("Current A edge URI: " + uriA);
+            // System.out.println("Iteration: " + i + "/" + edgesA.size());
             //Loop through b. If a match is found, increment b and EXIT THE LOOP. 
-            boolean foundMatch = false;
-            for (int j = 0; j < edgesB.size() || foundMatch; j++) {
+            boolean loopAgain = true;
+            for (int j = 0; j < edgesB.size() || loopAgain; j++) {
                 //get Edge B's destination
                 String uriB = edgesB.get(i).getDest().getURI();
-                System.out.println("Current B edge URI: " + uriB);
+                // System.out.println("Current B edge URI: " + uriB);
                 if (uriA.equals(uriB)) {
                     //Found a match, quit loop
-                    foundMatch = true;
+                    loopAgain = false;
                     //Increment total matches
                     totalMatches++;
+                    /* Uncomment if this method doesn't work
                     System.out.println("Found match!");
+                    System.out.println("Looping again? " + loopAgain);
+                    System.out.println("Iteration: " + j + "/" + edgesB.size());
+                    System.out.println("Total Matches: " + totalMatches);
+                    TimeUnit.SECONDS.sleep(1);
+                     */
                 }
             }
         }
