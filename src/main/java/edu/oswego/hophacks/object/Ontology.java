@@ -1,9 +1,18 @@
 package edu.oswego.hophacks.object;
 
+import java.io.*;
+
+import com.sun.tools.javac.Main;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings("unchecked")
 public class Ontology {
 public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<Node> total) {
     ArrayList<Node> destNodes = new ArrayList<>();
@@ -58,7 +67,7 @@ public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<N
 }
 
 
-    public static void main(String[] args)  {
+    public static <JsonObject> void main(String[] args) throws IOException {
         //This is the arraylist for all condition nodes
         ArrayList<Node> totalConditions = new ArrayList<>();
         //This is the arraylist for the condition nodes that apply to the patient's situation
@@ -66,6 +75,23 @@ public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<N
         //This is the arraylist for the nodes whose questions have been asked
         ArrayList<Node> determinedConditions = new ArrayList<>();
 
+
+
+
+        JSONParser jsonParser = new JSONParser();
+        try (InputStream inputStream = Main.class.getClassLoader().getResourceAsStream("ontology.json");
+             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream)))
+        {
+            //Read JSON file
+            Object obj = jsonParser.parse(reader);
+
+            JSONObject ontology = (JSONObject) obj;
+            JSONObject nodes = (JSONObject) ontology.get("nodes");
+
+
+        } catch (ParseException ex) {
+            throw new RuntimeException(ex);
+        }
 
 
         //Initialize a ton of nodes. If we're doing something simple it might be worth hard-coding this honestly
@@ -136,4 +162,4 @@ public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<N
             System.out.println("Patient appears to have no applicable conditions.");
         }
     }
-}
+    }
