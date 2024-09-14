@@ -98,5 +98,5 @@ for d, values in DIAGNOSIS_REQUIREMENTS.items():
 
 # for f in sorted(L, key=lambda):
 
-with open("../src/main/resources/ontology.json", "r+") as file:
+with open("../resources/ontology.json", "r+") as file:
     file.write(json.dumps(output, indent="    "))
