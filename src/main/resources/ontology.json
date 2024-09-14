@@ -1,0 +1,24 @@
+{
+  "edges": [
+    {
+      "obj": "OATM001000",
+      "relation": "http://purl.org/dc/elements/1.1/description",
+      "subj": "OATM002000"
+    },
+    {
+      "obj": "OATM001000",
+      "relation": "http://purl.org/dc/elements/1.1/description",
+      "subj": "OATM002000"
+    }
+  ],
+  "nodes": [
+    {
+      "content": "_Symptom",
+      "uri": "OATM001000"
+    },
+    {
+      "content": "TODO: Symptom title",
+      "uri": "OATM002000"
+    }
+  ]
+}
