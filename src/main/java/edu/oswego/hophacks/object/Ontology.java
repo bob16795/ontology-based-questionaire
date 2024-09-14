@@ -11,6 +11,7 @@ import org.json.simple.parser.ParseException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 @SuppressWarnings("unchecked")
 public class Ontology {
@@ -136,6 +137,14 @@ public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<N
             throw new RuntimeException(e);
         }
 
+        //NEED A SPECIFIC GRAPH WITH A "Conditions" NODE POINTING TO ALL CONDITIONS
+        //This will identify all of our symptoms/conditions
+        for (Edge e : alledges) {
+            if (e.getSource().getURI().equals("Conditions")) {
+                totalConditions.add(e.getDest());
+            }
+        }
+
 
 
         //Initialize a ton of nodes. If we're doing something simple it might be worth hard-coding this honestly
@@ -161,7 +170,17 @@ public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<N
         int conditionIndex = 0;
         //Loop until there are no other conditions to ask, or until we've asked a specific number of questions
         for (int i = 0; i < totalConditions.size() || totalConditions.size() == 1 + determinedConditions.size(); i++) {
-            boolean question = true; //We'd prompt for the question, in this case just assume true.
+            System.out.println("Does the patient have " + totalConditions.get(conditionIndex) + "? (Yes/No)");
+            Scanner s = new Scanner(System.in);
+            String response = s.nextLine();
+
+            boolean question;
+            if (response.toLowerCase().equals("yes")) {
+                question = true;
+            } else {
+                question = false;
+            }
+
 
             //Add it to the list of determined nodes
             determinedConditions.add(totalConditions.get(i));
