@@ -3,3 +3,4 @@ target
 out 
 *.class
 .idea
+^src/main/resources/ontology.json

@@ -31,7 +31,6 @@ CONCEPTS = {
 # this table is backwards, the relation is from the array items as sub to the diag as obj
 DIAGNOSIS_REQUIREMENTS = {
     "Glaucoma": [ "Patchy spots in eyes" ],
-    "Glaucoma": [ "Patchy spots in eyes" ],
     "COVID-19": [ "Cough", "Fever" ],
     
 }
@@ -97,7 +96,7 @@ for d, values in DIAGNOSIS_REQUIREMENTS.items():
             "obj": lut[sv],
         }]
 
-for f in sorted(L, key=lambda ):
+# for f in sorted(L, key=lambda):
 
-
-print(json.dumps(output, indent="    "))
+with open("../src/main/resources/ontology.json", "r+") as file:
+    file.write(json.dumps(output, indent="    "))
