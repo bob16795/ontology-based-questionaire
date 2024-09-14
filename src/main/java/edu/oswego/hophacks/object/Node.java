@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 
 public class Node {
-    private final String id;
+    private final String id; //Assume ID is unique
     private final String uri;
     private ArrayList<Edge> edges = new ArrayList<Edge>();
 
