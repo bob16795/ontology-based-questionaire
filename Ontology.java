@@ -84,9 +84,6 @@ public static Node determineMostValuable(ArrayList<Node> determined, ArrayList<N
         Edge coughCause2 = new Edge(cough, COVID, "Cause", "URIPLACEHOLDER15");
 
 
-        //TO DO: Once nodes and edges are created, iterate through the condition nodes and ask questions to see which are applicable
-        //TO DO: Add applicable nodes to arraylist. Ensure we somehow store the answers to these questions so we can transmit them to PHC
-
         //Always start with the same question
         int conditionIndex = 0;
         //Loop until there are no other conditions to ask, or until we've asked a specific number of questions
