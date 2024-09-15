@@ -134,6 +134,11 @@ for concept, (parent, bool_question) in CONCEPTS.items():
             "uri": new_bool_question_uri,
             "content": bool_question,
         }]
+        output["edges"] += [{
+            "subj": concept,
+            "relation": BOOL_QUESTION,
+            "obj": new_bool_question_uri,
+        }]
         last_question_id += 1
 
     output["edges"] += [{
