@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Ontology2 {
+public class Ontology {
     static ArrayList<Node> destNodes;
     static ArrayList<Node> undetermined;
     //This is the arraylist for the condition nodes that apply to the patient's situation
@@ -24,13 +24,14 @@ public class Ontology2 {
     static ArrayList<Edge> allEdges;
     static ArrayList<Node> totalConditions;
 
-    Node currentNode;
+
+    public static Node currentNode;
 
     boolean readyToSendQuestion;
     String questionToSend;
     String currentAnswer;
 
-    public Ontology2() {
+    public Ontology() {
         totalConditions = allNodes=destNodes = undetermined = applicableConditions = determinedConditions = new ArrayList<>();
         allEdges = new ArrayList<>();
         Node name = new Node("Name", "0");
@@ -136,8 +137,12 @@ public class Ontology2 {
 
                 String nameID = (String) nodeObject.get("content");
                 String uri = (String) nodeObject.get("uri");
-                allNodes.add(new Node(nameID, uri));
+                Node node = new Node(nameID, uri);
+                allNodes.add(node);
 
+                if (nameID.equals("_symptom")) {
+                    currentNode = node;
+                }
 
             }
 
@@ -237,7 +242,7 @@ public class Ontology2 {
 
 
     public static void main(String[] args) {
-        Ontology2 oogabooga = new Ontology2();
+        Ontology oogabooga = new Ontology();
     }
 
 }
