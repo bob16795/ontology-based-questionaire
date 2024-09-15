@@ -40,7 +40,7 @@ public class Deduction {
     public String getNextQuestion() {
         String question = "";
         for (Edge e : this.activeNode.getEdges()) {
-            if (e.getUri().equals("bool_question")) {
+            if (e.getRelation().equals("bool_question")) {
                 question = e.getDest().getID();
             }
         }
@@ -50,11 +50,7 @@ public class Deduction {
     public void determineAnswer(boolean answer) {
         if (!answer) {
             determinedSymptoms.add(this.activeNode);
-            //iterateCalc();
-        } else {
-
         }
-
     }
 
 
@@ -69,7 +65,7 @@ public class Deduction {
         HashBag<Node> possibleSymptoms = new HashBag<>();
         for(Edge e: node.getEdges()){
             //If the node has already been determined, don't add it
-            if(e.getUri().equals("symptom_of") && !determinedSymptoms.contains(e.getDest())){
+            if(e.getRelation().equals("symptom_of") && !determinedSymptoms.contains(e.getDest())){
                 ArrayList<Edge> sEdges = e.getDest().getEdges(); //Diagnosis
                 for(Edge f:sEdges){ //Going back up the tree
                     possibleSymptoms.add(f.getSource());
