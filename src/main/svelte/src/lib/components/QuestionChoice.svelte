@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { questions } from '$lib/stores';
 	import { createEventDispatcher } from 'svelte';
 
 	export let choice: string;
@@ -22,6 +23,10 @@
 		});
 
 		const json = await res.json();
+    questions.update((q) => {
+      q.push(json);
+      return q;
+    });
 	};
 </script>
 
