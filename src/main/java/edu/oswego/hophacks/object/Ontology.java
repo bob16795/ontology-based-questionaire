@@ -47,6 +47,27 @@ public class Ontology {
         System.out.println(allNodes);
     }
 
+    public static void getNextNode(String answer){
+        Node nextNode = null;
+        String answer_for = null;
+        for (Edge e : currentNode.getEdges()) {
+            if (e.getRelation().equals("is_a")) {
+                //Get the node that e points to
+                Node possibleNode = e.getDest();
+                //Find the option node from possible node
+                for (Edge possibleE : possibleNode.getEdges()) {
+                    if (possibleE.getRelation().equals("answer_for")) {
+                        answer_for = possibleE.getDest().getID();
+                        if (answer_for.equals(answer)) {
+                            nextNode = possibleNode;
+                        };
+                    }
+                }
+            }
+        }
+        currentNode = nextNode;
+    }
+
 
     public static JSONObject getQuestion(Node node) {
         String question = "";
