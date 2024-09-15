@@ -1,6 +1,7 @@
 package edu.oswego.hophacks.controller;
 
 //import edu.oswego.hophacks.object
+import edu.oswego.hophacks.object.Deduction;
 import org.json.simple.JSONObject;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,11 +14,19 @@ import java.util.HashMap;
 @RestController
 public class Endpoints {
     HashMap<String, String> chatHistory;
+    JSONObject message = null;
+    boolean sendMessage = false;
+
+    public void accecptMessage(JSONObject obj){
+            obj = message;
+            this.sendMessage = true;
+    }
 
     @PostMapping("/message")
     //Ontology.getMessage -> new JSONObject("new Question");
     public ResponseEntity<JSONObject> sendMessage(@RequestBody JSONObject json) {
-        return ResponseEntity.ok(json);
+
+        return ResponseEntity.ok(message);
     }
 
 
