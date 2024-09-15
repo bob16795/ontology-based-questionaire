@@ -21,7 +21,7 @@ public class Endpoints {
 
         Ontology.getNextNode((String) json.get("msg"));
 
-        return ResponseEntity.ok(new JSONObject());
+        return ResponseEntity.ok(Ontology.getQuestion(Ontology.currentNode));
     }
 
 
