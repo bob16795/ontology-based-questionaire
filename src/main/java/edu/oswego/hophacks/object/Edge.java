@@ -27,4 +27,8 @@ public class Edge {
     public Node getDest() {
         return this.dest;
     }
+
+    public String getUri(){
+        return uri;
+    }
 }
