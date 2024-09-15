@@ -179,7 +179,7 @@ for (parent, question), responses in QUESTIONS.items():
         output["edges"] += [{
             "subj": new_response_uri,
             "relation": ANSWER_FOR,
-            "obj": lut[parent],
+            "obj": lut[node],
         }]
 
 with open("../src/main/resources/ontology.json", "w+") as file:

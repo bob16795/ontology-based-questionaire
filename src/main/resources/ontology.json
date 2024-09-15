@@ -798,27 +798,27 @@
         {
             "subj": "OATM050000",
             "relation": "answer_for",
-            "obj": "OATM010000"
+            "obj": "OATM010002"
         },
         {
             "subj": "OATM050001",
             "relation": "answer_for",
-            "obj": "OATM010000"
+            "obj": "OATM010001"
         },
         {
             "subj": "OATM050002",
             "relation": "answer_for",
-            "obj": "OATM010000"
+            "obj": "OATM010003"
         },
         {
             "subj": "OATM050003",
             "relation": "answer_for",
-            "obj": "OATM010000"
+            "obj": "OATM010004"
         },
         {
             "subj": "OATM050004",
             "relation": "answer_for",
-            "obj": "OATM010000"
+            "obj": "OATM010005"
         },
         {
             "subj": "OATM040021",
@@ -828,17 +828,17 @@
         {
             "subj": "OATM050005",
             "relation": "answer_for",
-            "obj": "OATM010003"
+            "obj": "OATM010006"
         },
         {
             "subj": "OATM050006",
             "relation": "answer_for",
-            "obj": "OATM010003"
+            "obj": "OATM010007"
         },
         {
             "subj": "OATM050007",
             "relation": "answer_for",
-            "obj": "OATM010003"
+            "obj": "OATM010008"
         },
         {
             "subj": "OATM040022",
@@ -848,12 +848,12 @@
         {
             "subj": "OATM050008",
             "relation": "answer_for",
-            "obj": "OATM010001"
+            "obj": "OATM010009"
         },
         {
             "subj": "OATM050009",
             "relation": "answer_for",
-            "obj": "OATM010001"
+            "obj": "OATM010010"
         },
         {
             "subj": "OATM040023",
@@ -863,17 +863,17 @@
         {
             "subj": "OATM050010",
             "relation": "answer_for",
-            "obj": "OATM010002"
+            "obj": "OATM010011"
         },
         {
             "subj": "OATM050011",
             "relation": "answer_for",
-            "obj": "OATM010002"
+            "obj": "OATM010012"
         },
         {
             "subj": "OATM050012",
             "relation": "answer_for",
-            "obj": "OATM010002"
+            "obj": "OATM010013"
         },
         {
             "subj": "OATM040024",
@@ -883,17 +883,17 @@
         {
             "subj": "OATM050013",
             "relation": "answer_for",
-            "obj": "OATM010004"
+            "obj": "OATM010015"
         },
         {
             "subj": "OATM050014",
             "relation": "answer_for",
-            "obj": "OATM010004"
+            "obj": "OATM010016"
         },
         {
             "subj": "OATM050015",
             "relation": "answer_for",
-            "obj": "OATM010004"
+            "obj": "OATM010017"
         },
         {
             "subj": "OATM040025",
@@ -903,12 +903,12 @@
         {
             "subj": "OATM050016",
             "relation": "answer_for",
-            "obj": "OATM010005"
+            "obj": "OATM010018"
         },
         {
             "subj": "OATM050017",
             "relation": "answer_for",
-            "obj": "OATM010005"
+            "obj": "OATM010019"
         }
     ]
 }
