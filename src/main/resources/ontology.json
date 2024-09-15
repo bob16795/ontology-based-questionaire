@@ -797,28 +797,28 @@
         },
         {
             "subj": "OATM050000",
-            "relation": "question_for",
-            "obj": "OATM010000"
+            "relation": "answer_for",
+            "obj": "OATM010002"
         },
         {
             "subj": "OATM050001",
-            "relation": "question_for",
-            "obj": "OATM010000"
+            "relation": "answer_for",
+            "obj": "OATM010001"
         },
         {
             "subj": "OATM050002",
-            "relation": "question_for",
-            "obj": "OATM010000"
+            "relation": "answer_for",
+            "obj": "OATM010003"
         },
         {
             "subj": "OATM050003",
-            "relation": "question_for",
-            "obj": "OATM010000"
+            "relation": "answer_for",
+            "obj": "OATM010004"
         },
         {
             "subj": "OATM050004",
-            "relation": "question_for",
-            "obj": "OATM010000"
+            "relation": "answer_for",
+            "obj": "OATM010005"
         },
         {
             "subj": "OATM040021",
@@ -827,18 +827,18 @@
         },
         {
             "subj": "OATM050005",
-            "relation": "question_for",
-            "obj": "OATM010003"
+            "relation": "answer_for",
+            "obj": "OATM010006"
         },
         {
             "subj": "OATM050006",
-            "relation": "question_for",
-            "obj": "OATM010003"
+            "relation": "answer_for",
+            "obj": "OATM010007"
         },
         {
             "subj": "OATM050007",
-            "relation": "question_for",
-            "obj": "OATM010003"
+            "relation": "answer_for",
+            "obj": "OATM010008"
         },
         {
             "subj": "OATM040022",
@@ -847,13 +847,13 @@
         },
         {
             "subj": "OATM050008",
-            "relation": "question_for",
-            "obj": "OATM010001"
+            "relation": "answer_for",
+            "obj": "OATM010009"
         },
         {
             "subj": "OATM050009",
-            "relation": "question_for",
-            "obj": "OATM010001"
+            "relation": "answer_for",
+            "obj": "OATM010010"
         },
         {
             "subj": "OATM040023",
@@ -862,18 +862,18 @@
         },
         {
             "subj": "OATM050010",
-            "relation": "question_for",
-            "obj": "OATM010002"
+            "relation": "answer_for",
+            "obj": "OATM010011"
         },
         {
             "subj": "OATM050011",
-            "relation": "question_for",
-            "obj": "OATM010002"
+            "relation": "answer_for",
+            "obj": "OATM010012"
         },
         {
             "subj": "OATM050012",
-            "relation": "question_for",
-            "obj": "OATM010002"
+            "relation": "answer_for",
+            "obj": "OATM010013"
         },
         {
             "subj": "OATM040024",
@@ -882,18 +882,18 @@
         },
         {
             "subj": "OATM050013",
-            "relation": "question_for",
-            "obj": "OATM010004"
+            "relation": "answer_for",
+            "obj": "OATM010015"
         },
         {
             "subj": "OATM050014",
-            "relation": "question_for",
-            "obj": "OATM010004"
+            "relation": "answer_for",
+            "obj": "OATM010016"
         },
         {
             "subj": "OATM050015",
-            "relation": "question_for",
-            "obj": "OATM010004"
+            "relation": "answer_for",
+            "obj": "OATM010017"
         },
         {
             "subj": "OATM040025",
@@ -902,13 +902,13 @@
         },
         {
             "subj": "OATM050016",
-            "relation": "question_for",
-            "obj": "OATM010005"
+            "relation": "answer_for",
+            "obj": "OATM010018"
         },
         {
             "subj": "OATM050017",
-            "relation": "question_for",
-            "obj": "OATM010005"
+            "relation": "answer_for",
+            "obj": "OATM010019"
         }
     ]
 }
