@@ -491,9 +491,9 @@
     ],
     "edges": [
         {
-            "subj": "symptom",
+            "obj": "symptom",
             "relation": "bool_question",
-            "obj": "OATM040000"
+            "subj": "OATM040000"
         },
         {
             "obj": "OATM010000",
@@ -501,9 +501,9 @@
             "subj": "OATM030000"
         },
         {
-            "subj": "ear_issue",
+            "obj": "ear_issue",
             "relation": "bool_question",
-            "obj": "OATM040001"
+            "subj": "OATM040001"
         },
         {
             "obj": "OATM010001",
@@ -516,9 +516,9 @@
             "subj": "OATM010001"
         },
         {
-            "subj": "eye_issue",
+            "obj": "eye_issue",
             "relation": "bool_question",
-            "obj": "OATM040002"
+            "subj": "OATM040002"
         },
         {
             "obj": "OATM010002",
@@ -531,9 +531,9 @@
             "subj": "OATM010002"
         },
         {
-            "subj": "mouth_issue",
+            "obj": "mouth_issue",
             "relation": "bool_question",
-            "obj": "OATM040003"
+            "subj": "OATM040003"
         },
         {
             "obj": "OATM010003",
@@ -546,9 +546,9 @@
             "subj": "OATM010003"
         },
         {
-            "subj": "nose_issue",
+            "obj": "nose_issue",
             "relation": "bool_question",
-            "obj": "OATM040004"
+            "subj": "OATM040004"
         },
         {
             "obj": "OATM010004",
@@ -561,9 +561,9 @@
             "subj": "OATM010004"
         },
         {
-            "subj": "skin_issue",
+            "obj": "skin_issue",
             "relation": "bool_question",
-            "obj": "OATM040005"
+            "subj": "OATM040005"
         },
         {
             "obj": "OATM010005",
@@ -576,9 +576,9 @@
             "subj": "OATM010005"
         },
         {
-            "subj": "cough",
+            "obj": "cough",
             "relation": "bool_question",
-            "obj": "OATM040006"
+            "subj": "OATM040006"
         },
         {
             "obj": "OATM010006",
@@ -591,9 +591,9 @@
             "subj": "OATM010006"
         },
         {
-            "subj": "jaw_pain",
+            "obj": "jaw_pain",
             "relation": "bool_question",
-            "obj": "OATM040007"
+            "subj": "OATM040007"
         },
         {
             "obj": "OATM010007",
@@ -606,9 +606,9 @@
             "subj": "OATM010007"
         },
         {
-            "subj": "sore_throat",
+            "obj": "sore_throat",
             "relation": "bool_question",
-            "obj": "OATM040008"
+            "subj": "OATM040008"
         },
         {
             "obj": "OATM010008",
@@ -621,9 +621,9 @@
             "subj": "OATM010008"
         },
         {
-            "subj": "hearing_loss",
+            "obj": "hearing_loss",
             "relation": "bool_question",
-            "obj": "OATM040009"
+            "subj": "OATM040009"
         },
         {
             "obj": "OATM010009",
@@ -636,9 +636,9 @@
             "subj": "OATM010009"
         },
         {
-            "subj": "ear_ringing",
+            "obj": "ear_ringing",
             "relation": "bool_question",
-            "obj": "OATM040010"
+            "subj": "OATM040010"
         },
         {
             "obj": "OATM010010",
@@ -651,9 +651,9 @@
             "subj": "OATM010010"
         },
         {
-            "subj": "vision_loss",
+            "obj": "vision_loss",
             "relation": "bool_question",
-            "obj": "OATM040011"
+            "subj": "OATM040011"
         },
         {
             "obj": "OATM010011",
@@ -666,9 +666,9 @@
             "subj": "OATM010011"
         },
         {
-            "subj": "eye_pain",
+            "obj": "eye_pain",
             "relation": "bool_question",
-            "obj": "OATM040012"
+            "subj": "OATM040012"
         },
         {
             "obj": "OATM010012",
@@ -681,9 +681,9 @@
             "subj": "OATM010012"
         },
         {
-            "subj": "red_eyes",
+            "obj": "red_eyes",
             "relation": "bool_question",
-            "obj": "OATM040013"
+            "subj": "OATM040013"
         },
         {
             "obj": "OATM010013",
@@ -696,9 +696,9 @@
             "subj": "OATM010013"
         },
         {
-            "subj": "patchy_spots_in_vision",
+            "obj": "patchy_spots_in_vision",
             "relation": "bool_question",
-            "obj": "OATM040014"
+            "subj": "OATM040014"
         },
         {
             "obj": "OATM010014",
@@ -711,9 +711,9 @@
             "subj": "OATM010014"
         },
         {
-            "subj": "stuffy_nose",
+            "obj": "stuffy_nose",
             "relation": "bool_question",
-            "obj": "OATM040015"
+            "subj": "OATM040015"
         },
         {
             "obj": "OATM010015",
@@ -726,9 +726,9 @@
             "subj": "OATM010015"
         },
         {
-            "subj": "runny_nose",
+            "obj": "runny_nose",
             "relation": "bool_question",
-            "obj": "OATM040016"
+            "subj": "OATM040016"
         },
         {
             "obj": "OATM010016",
@@ -741,9 +741,9 @@
             "subj": "OATM010016"
         },
         {
-            "subj": "nose_bleed",
+            "obj": "nose_bleed",
             "relation": "bool_question",
-            "obj": "OATM040017"
+            "subj": "OATM040017"
         },
         {
             "obj": "OATM010017",
@@ -756,9 +756,9 @@
             "subj": "OATM010017"
         },
         {
-            "subj": "skin_rash",
+            "obj": "skin_rash",
             "relation": "bool_question",
-            "obj": "OATM040018"
+            "subj": "OATM040018"
         },
         {
             "obj": "OATM010018",
@@ -771,9 +771,9 @@
             "subj": "OATM010018"
         },
         {
-            "subj": "itching",
+            "obj": "itching",
             "relation": "bool_question",
-            "obj": "OATM040019"
+            "subj": "OATM040019"
         },
         {
             "obj": "OATM010019",
