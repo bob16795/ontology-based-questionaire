@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Node {
     private final String id; //Assume ID is unique
     private final String uri;
-    private ArrayList<Edge> edges = new ArrayList<Edge>();
+    private final ArrayList<Edge> edges = new ArrayList<>();
 
     public Node(String ID, String URI) {
         this.id = ID;
