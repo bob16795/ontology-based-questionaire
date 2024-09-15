@@ -13,6 +13,9 @@
 
 		const res = await fetch('http://localhost:8080/message', {
 			method: 'POST',
+      headers: {
+        "Content-Type": "application/json",
+      },
 			body: JSON.stringify({
 				msg: choice
 			})
