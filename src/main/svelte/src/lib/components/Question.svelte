@@ -1,18 +1,18 @@
 <script lang="ts">
 	import { FileQuestion } from 'lucide-svelte';
 	import QuestionChoice from './QuestionChoice.svelte';
+	import { fly } from 'svelte/transition';
 
 	export let question: Question;
 
 	let disabled: boolean;
 
 	const click = () => {
-		console.log('YIPPEE 2');
 		disabled = true;
 	};
 </script>
 
-<div class="block">
+<div class="block" transition:fly={{ y: 30, duration: 300 }}>
 	<div class="icon-bg">
 		<FileQuestion />
 	</div>
@@ -29,6 +29,7 @@
 <style>
 	.block {
 		position: relative;
+		margin-bottom: 0.5rem;
 		background-color: #fff;
 		border-radius: 5px;
 		min-height: 75px;
