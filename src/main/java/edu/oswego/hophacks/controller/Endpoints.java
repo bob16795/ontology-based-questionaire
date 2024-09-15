@@ -18,6 +18,9 @@ public class Endpoints {
 
     @PostMapping("/message")
     public ResponseEntity<JSONObject> sendMessage(@RequestBody JSONObject json) {
+
+        Ontology.getNextNode((String) json.get("msg"));
+
         return ResponseEntity.ok(new JSONObject());
     }
 
