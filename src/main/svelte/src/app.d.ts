@@ -8,6 +8,11 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+	type Question = {
+		question: string;
+		choices: string[];
+		answer?: string;
+	}
 }
 
-export {};
+export { };
