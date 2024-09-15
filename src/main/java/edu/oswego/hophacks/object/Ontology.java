@@ -73,8 +73,10 @@ public class Ontology {
         String question = "";
         ArrayList<String> possibleResponses = new ArrayList<>();
         //Get nodes question
+        boolean newLineOfQuestioning = true;
         for (Edge e : node.getEdges()) {
             if (e.getRelation().equals("question_for")) {
+                newLineOfQuestioning = false;
                  question = e.getDest().getID();
                 //TODO: add code for asking question + getting response
             }
@@ -89,9 +91,30 @@ public class Ontology {
                     }
                 }
             }
+        Node tempNode;
+        if(newLineOfQuestioning) {
+            Deduction deduction = new Deduction(node);
+            tempNode = deduction.getNextQuestion();
+            for(Edge e : tempNode.getEdges()){
+                if(e.getRelation().equals("bool_question")){
+                    question = e.getDest().getID();
+                } else if (e.getRelation().equals("is_a")) {
+                    //Get the node that e points to
+                    Node possibleNode = e.getDest();
+                    //Find the option node from possible node
+                    for (Edge possibleE : possibleNode.getEdges()) {
+                        if (possibleE.getRelation().equals("answer_for")) {
+                            possibleResponses.add(possibleE.getDest().getID());
+                        }
+                    }
+                }
+            }
+            }
+
         JSONObject object = new JSONObject();
         object.put("question", question);
         object.put("choices", possibleResponses);
+
 
         return object;
     }
