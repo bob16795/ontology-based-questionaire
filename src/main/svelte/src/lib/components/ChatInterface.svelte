@@ -17,7 +17,7 @@
 <div class="wrap">
 	<h1>Health Questionnaire</h1>
 	<hr />
-	<div class="scroll">
+	<div>
 		{#each $questions as question}
 			<Question {question} />
 		{/each}
@@ -32,8 +32,6 @@
 		max-width: 800px;
 		height: 100%;
 		border-radius: 1rem;
-	}
-	div {
 		overflow-y: scroll;
 	}
 	div h1 {
