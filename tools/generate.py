@@ -25,35 +25,52 @@ CONCEPTS = {
 
     "hearing_loss": ("ear_issue", "Do you have hearing loss?"),
     "ear_ringing": ("ear_issue", "Do you have ringing in your ears?"),
+    "ear_hissing": ("ear_issue", "Do you hear hissing in your ears?"),
+
+
 
     "vision_loss": ("eye_issue", "Are you also experiencing vision loss?"),
     "eye_pain": ("eye_issue", "Are you experiencing eye pain?"),
     "red_eyes": ("eye_issue", "Do you have red or bloodshot eyes?"),
-    "patchy_spots_in_vision": ("vision_loss", "Are there patchy spots in your peripheral vision?"),
+    "patchy_spots_in_vision": ("eye_issue", "Are there patchy spots in your peripheral vision?"),
+    "blurry_vision": ("eye_issue", "Is your vision blurry?"),
+    "eye_pressure": ("eye_issue", "Is there pressure in your eyes?"),
 
     "stuffy_nose": ("nose_issue", "Do you have a stuffy nose?"),
     "runny_nose": ("nose_issue", "Do you have a runny nose?"),
     "nose_bleed": ("nose_issue", "Have you had a nosebleed?"),
+    "sneezing": ("nose_issue", "Do you sneeze a lot?"),
+
 
     "skin_rash": ("skin_issue", "Do you have a rash?"),
     "itching": ("skin_issue", "Do you feel itchy?"),
+    "raised_welts": ("skin_issue", "Are there raised welts on your skin?"),
 
     # diagnosis
     "diagnosis": ("", ""),
     "glaucoma": ("diagnosis", ""),
+    "dry_eye": ("diagnosis", ""),
     "sinusitis": ("diagnosis", ""),
     "otitis_media": ("diagnosis", ""),
+    "tinnitus": ("diagnosis", ""),
     "conjunctivitis": ("diagnosis", ""),
     "eczema": ("diagnosis", ""),
+    "welts": ("diagnosis", ""),
+    "allergy": ("diagnosis", ""),
 }
 
 # this table is backwards, the relation is from the array items as sub to the diag as obj
 DIAGNOSIS_REQUIREMENTS = {
-    "glaucoma": ["patchy_spots_in_vision", "vision_loss"],
+    "glaucoma": ["patchy_spots_in_vision", "vision_loss", "eye_pressure", "eye_pain"],
+    "dry_eye": ["eye_pain", "vision_loss", "blurry_vision", "red_eyes"],
     "sinusitis": ["stuffy_nose", "runny_nose"],
+    "allergy": ["stuffy_nose", "runny_nose", "sneezing"],
     "otitis_media": ["ear_ringing", "hearing_loss"],
+    "tinnitus": ["ear_hissing", "ear_ringing"],
     "conjunctivitis": ["red_eyes", "eye_pain"],
     "eczema": ["skin_rash", "itching"],
+    "diagnosis": ["itching", "raised_welts"],
+
 }
 
 QUESTIONS = {
@@ -161,6 +178,11 @@ for diagnosis, symptoms in DIAGNOSIS_REQUIREMENTS.items():
             "relation": SYMPTOM_OF,
             "obj": lut[symptom],
         }]
+#         output["edges"] += [{
+#             "obj": lut[diagnosis],
+#             "relation": SYMPTOM_OF,
+#             "subj": lut[symptom],
+#         }]
 
 for (parent, question), responses in QUESTIONS.items():
     new_question_uri = f"OATM{last_question_id:06}"

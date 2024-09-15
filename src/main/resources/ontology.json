@@ -178,222 +178,350 @@
         },
         {
             "uri": "OATM010011",
-            "content": "_vision_loss"
+            "content": "_ear_hissing"
         },
         {
             "uri": "OATM020011",
-            "content": "TODO: vision_loss title"
+            "content": "TODO: ear_hissing title"
         },
         {
             "uri": "OATM030011",
-            "content": "TODO: vision_loss description"
+            "content": "TODO: ear_hissing description"
         },
         {
             "uri": "OATM040011",
-            "content": "Are you also experiencing vision loss?"
+            "content": "Do you hear hissing in your ears?"
         },
         {
             "uri": "OATM010012",
-            "content": "_eye_pain"
+            "content": "_vision_loss"
         },
         {
             "uri": "OATM020012",
-            "content": "TODO: eye_pain title"
+            "content": "TODO: vision_loss title"
         },
         {
             "uri": "OATM030012",
-            "content": "TODO: eye_pain description"
+            "content": "TODO: vision_loss description"
         },
         {
             "uri": "OATM040012",
-            "content": "Are you experiencing eye pain?"
+            "content": "Are you also experiencing vision loss?"
         },
         {
             "uri": "OATM010013",
-            "content": "_red_eyes"
+            "content": "_eye_pain"
         },
         {
             "uri": "OATM020013",
-            "content": "TODO: red_eyes title"
+            "content": "TODO: eye_pain title"
         },
         {
             "uri": "OATM030013",
-            "content": "TODO: red_eyes description"
+            "content": "TODO: eye_pain description"
         },
         {
             "uri": "OATM040013",
-            "content": "Do you have red or bloodshot eyes?"
+            "content": "Are you experiencing eye pain?"
         },
         {
             "uri": "OATM010014",
-            "content": "_patchy_spots_in_vision"
+            "content": "_red_eyes"
         },
         {
             "uri": "OATM020014",
-            "content": "TODO: patchy_spots_in_vision title"
+            "content": "TODO: red_eyes title"
         },
         {
             "uri": "OATM030014",
-            "content": "TODO: patchy_spots_in_vision description"
+            "content": "TODO: red_eyes description"
         },
         {
             "uri": "OATM040014",
-            "content": "Are there patchy spots in your peripheral vision?"
+            "content": "Do you have red or bloodshot eyes?"
         },
         {
             "uri": "OATM010015",
-            "content": "_stuffy_nose"
+            "content": "_patchy_spots_in_vision"
         },
         {
             "uri": "OATM020015",
-            "content": "TODO: stuffy_nose title"
+            "content": "TODO: patchy_spots_in_vision title"
         },
         {
             "uri": "OATM030015",
-            "content": "TODO: stuffy_nose description"
+            "content": "TODO: patchy_spots_in_vision description"
         },
         {
             "uri": "OATM040015",
-            "content": "Do you have a stuffy nose?"
+            "content": "Are there patchy spots in your peripheral vision?"
         },
         {
             "uri": "OATM010016",
-            "content": "_runny_nose"
+            "content": "_blurry_vision"
         },
         {
             "uri": "OATM020016",
-            "content": "TODO: runny_nose title"
+            "content": "TODO: blurry_vision title"
         },
         {
             "uri": "OATM030016",
-            "content": "TODO: runny_nose description"
+            "content": "TODO: blurry_vision description"
         },
         {
             "uri": "OATM040016",
-            "content": "Do you have a runny nose?"
+            "content": "Is your vision blurry?"
         },
         {
             "uri": "OATM010017",
-            "content": "_nose_bleed"
+            "content": "_eye_pressure"
         },
         {
             "uri": "OATM020017",
-            "content": "TODO: nose_bleed title"
+            "content": "TODO: eye_pressure title"
         },
         {
             "uri": "OATM030017",
-            "content": "TODO: nose_bleed description"
+            "content": "TODO: eye_pressure description"
         },
         {
             "uri": "OATM040017",
-            "content": "Have you had a nosebleed?"
+            "content": "Is there pressure in your eyes?"
         },
         {
             "uri": "OATM010018",
-            "content": "_skin_rash"
+            "content": "_stuffy_nose"
         },
         {
             "uri": "OATM020018",
-            "content": "TODO: skin_rash title"
+            "content": "TODO: stuffy_nose title"
         },
         {
             "uri": "OATM030018",
-            "content": "TODO: skin_rash description"
+            "content": "TODO: stuffy_nose description"
         },
         {
             "uri": "OATM040018",
-            "content": "Do you have a rash?"
+            "content": "Do you have a stuffy nose?"
         },
         {
             "uri": "OATM010019",
-            "content": "_itching"
+            "content": "_runny_nose"
         },
         {
             "uri": "OATM020019",
-            "content": "TODO: itching title"
+            "content": "TODO: runny_nose title"
         },
         {
             "uri": "OATM030019",
-            "content": "TODO: itching description"
+            "content": "TODO: runny_nose description"
         },
         {
             "uri": "OATM040019",
-            "content": "Do you feel itchy?"
+            "content": "Do you have a runny nose?"
         },
         {
             "uri": "OATM010020",
-            "content": "_diagnosis"
+            "content": "_nose_bleed"
         },
         {
             "uri": "OATM020020",
-            "content": "TODO: diagnosis title"
+            "content": "TODO: nose_bleed title"
         },
         {
             "uri": "OATM030020",
-            "content": "TODO: diagnosis description"
-        },
-        {
-            "uri": "OATM010021",
-            "content": "_glaucoma"
-        },
-        {
-            "uri": "OATM020021",
-            "content": "TODO: glaucoma title"
-        },
-        {
-            "uri": "OATM030021",
-            "content": "TODO: glaucoma description"
-        },
-        {
-            "uri": "OATM010022",
-            "content": "_sinusitis"
-        },
-        {
-            "uri": "OATM020022",
-            "content": "TODO: sinusitis title"
-        },
-        {
-            "uri": "OATM030022",
-            "content": "TODO: sinusitis description"
-        },
-        {
-            "uri": "OATM010023",
-            "content": "_otitis_media"
-        },
-        {
-            "uri": "OATM020023",
-            "content": "TODO: otitis_media title"
-        },
-        {
-            "uri": "OATM030023",
-            "content": "TODO: otitis_media description"
-        },
-        {
-            "uri": "OATM010024",
-            "content": "_conjunctivitis"
-        },
-        {
-            "uri": "OATM020024",
-            "content": "TODO: conjunctivitis title"
-        },
-        {
-            "uri": "OATM030024",
-            "content": "TODO: conjunctivitis description"
-        },
-        {
-            "uri": "OATM010025",
-            "content": "_eczema"
-        },
-        {
-            "uri": "OATM020025",
-            "content": "TODO: eczema title"
-        },
-        {
-            "uri": "OATM030025",
-            "content": "TODO: eczema description"
+            "content": "TODO: nose_bleed description"
         },
         {
             "uri": "OATM040020",
+            "content": "Have you had a nosebleed?"
+        },
+        {
+            "uri": "OATM010021",
+            "content": "_sneezing"
+        },
+        {
+            "uri": "OATM020021",
+            "content": "TODO: sneezing title"
+        },
+        {
+            "uri": "OATM030021",
+            "content": "TODO: sneezing description"
+        },
+        {
+            "uri": "OATM040021",
+            "content": "Do you sneeze a lot?"
+        },
+        {
+            "uri": "OATM010022",
+            "content": "_skin_rash"
+        },
+        {
+            "uri": "OATM020022",
+            "content": "TODO: skin_rash title"
+        },
+        {
+            "uri": "OATM030022",
+            "content": "TODO: skin_rash description"
+        },
+        {
+            "uri": "OATM040022",
+            "content": "Do you have a rash?"
+        },
+        {
+            "uri": "OATM010023",
+            "content": "_itching"
+        },
+        {
+            "uri": "OATM020023",
+            "content": "TODO: itching title"
+        },
+        {
+            "uri": "OATM030023",
+            "content": "TODO: itching description"
+        },
+        {
+            "uri": "OATM040023",
+            "content": "Do you feel itchy?"
+        },
+        {
+            "uri": "OATM010024",
+            "content": "_raised_welts"
+        },
+        {
+            "uri": "OATM020024",
+            "content": "TODO: raised_welts title"
+        },
+        {
+            "uri": "OATM030024",
+            "content": "TODO: raised_welts description"
+        },
+        {
+            "uri": "OATM040024",
+            "content": "Are there raised welts on your skin?"
+        },
+        {
+            "uri": "OATM010025",
+            "content": "_diagnosis"
+        },
+        {
+            "uri": "OATM020025",
+            "content": "TODO: diagnosis title"
+        },
+        {
+            "uri": "OATM030025",
+            "content": "TODO: diagnosis description"
+        },
+        {
+            "uri": "OATM010026",
+            "content": "_glaucoma"
+        },
+        {
+            "uri": "OATM020026",
+            "content": "TODO: glaucoma title"
+        },
+        {
+            "uri": "OATM030026",
+            "content": "TODO: glaucoma description"
+        },
+        {
+            "uri": "OATM010027",
+            "content": "_dry_eye"
+        },
+        {
+            "uri": "OATM020027",
+            "content": "TODO: dry_eye title"
+        },
+        {
+            "uri": "OATM030027",
+            "content": "TODO: dry_eye description"
+        },
+        {
+            "uri": "OATM010028",
+            "content": "_sinusitis"
+        },
+        {
+            "uri": "OATM020028",
+            "content": "TODO: sinusitis title"
+        },
+        {
+            "uri": "OATM030028",
+            "content": "TODO: sinusitis description"
+        },
+        {
+            "uri": "OATM010029",
+            "content": "_otitis_media"
+        },
+        {
+            "uri": "OATM020029",
+            "content": "TODO: otitis_media title"
+        },
+        {
+            "uri": "OATM030029",
+            "content": "TODO: otitis_media description"
+        },
+        {
+            "uri": "OATM010030",
+            "content": "_tinnitus"
+        },
+        {
+            "uri": "OATM020030",
+            "content": "TODO: tinnitus title"
+        },
+        {
+            "uri": "OATM030030",
+            "content": "TODO: tinnitus description"
+        },
+        {
+            "uri": "OATM010031",
+            "content": "_conjunctivitis"
+        },
+        {
+            "uri": "OATM020031",
+            "content": "TODO: conjunctivitis title"
+        },
+        {
+            "uri": "OATM030031",
+            "content": "TODO: conjunctivitis description"
+        },
+        {
+            "uri": "OATM010032",
+            "content": "_eczema"
+        },
+        {
+            "uri": "OATM020032",
+            "content": "TODO: eczema title"
+        },
+        {
+            "uri": "OATM030032",
+            "content": "TODO: eczema description"
+        },
+        {
+            "uri": "OATM010033",
+            "content": "_welts"
+        },
+        {
+            "uri": "OATM020033",
+            "content": "TODO: welts title"
+        },
+        {
+            "uri": "OATM030033",
+            "content": "TODO: welts description"
+        },
+        {
+            "uri": "OATM010034",
+            "content": "_allergy"
+        },
+        {
+            "uri": "OATM020034",
+            "content": "TODO: allergy title"
+        },
+        {
+            "uri": "OATM030034",
+            "content": "TODO: allergy description"
+        },
+        {
+            "uri": "OATM040025",
             "content": "Where is your worst symptom?"
         },
         {
@@ -417,7 +545,7 @@
             "content": "My skin."
         },
         {
-            "uri": "OATM040021",
+            "uri": "OATM040026",
             "content": "What kind of mouth issue?"
         },
         {
@@ -433,7 +561,7 @@
             "content": "I have a sore throat."
         },
         {
-            "uri": "OATM040022",
+            "uri": "OATM040027",
             "content": "What kind of ear issue?"
         },
         {
@@ -445,7 +573,7 @@
             "content": "I hear ringing."
         },
         {
-            "uri": "OATM040023",
+            "uri": "OATM040028",
             "content": "What kind of eye issue?"
         },
         {
@@ -461,7 +589,7 @@
             "content": "My eyes are red."
         },
         {
-            "uri": "OATM040024",
+            "uri": "OATM040029",
             "content": "What kind of nose issue?"
         },
         {
@@ -477,7 +605,7 @@
             "content": "I've had a nosebleed."
         },
         {
-            "uri": "OATM040025",
+            "uri": "OATM040030",
             "content": "What kind of skin issue?"
         },
         {
@@ -661,7 +789,7 @@
             "subj": "OATM030011"
         },
         {
-            "obj": "OATM010002",
+            "obj": "OATM010001",
             "relation": "is_a",
             "subj": "OATM010011"
         },
@@ -706,7 +834,7 @@
             "subj": "OATM030014"
         },
         {
-            "obj": "OATM010011",
+            "obj": "OATM010002",
             "relation": "is_a",
             "subj": "OATM010014"
         },
@@ -721,7 +849,7 @@
             "subj": "OATM030015"
         },
         {
-            "obj": "OATM010004",
+            "obj": "OATM010002",
             "relation": "is_a",
             "subj": "OATM010015"
         },
@@ -736,7 +864,7 @@
             "subj": "OATM030016"
         },
         {
-            "obj": "OATM010004",
+            "obj": "OATM010002",
             "relation": "is_a",
             "subj": "OATM010016"
         },
@@ -751,7 +879,7 @@
             "subj": "OATM030017"
         },
         {
-            "obj": "OATM010004",
+            "obj": "OATM010002",
             "relation": "is_a",
             "subj": "OATM010017"
         },
@@ -766,7 +894,7 @@
             "subj": "OATM030018"
         },
         {
-            "obj": "OATM010005",
+            "obj": "OATM010004",
             "relation": "is_a",
             "subj": "OATM010018"
         },
@@ -781,9 +909,14 @@
             "subj": "OATM030019"
         },
         {
-            "obj": "OATM010005",
+            "obj": "OATM010004",
             "relation": "is_a",
             "subj": "OATM010019"
+        },
+        {
+            "obj": "OATM010020",
+            "relation": "bool_question",
+            "subj": "OATM040020"
         },
         {
             "obj": "OATM010020",
@@ -791,14 +924,29 @@
             "subj": "OATM030020"
         },
         {
+            "obj": "OATM010004",
+            "relation": "is_a",
+            "subj": "OATM010020"
+        },
+        {
+            "obj": "OATM010021",
+            "relation": "bool_question",
+            "subj": "OATM040021"
+        },
+        {
             "obj": "OATM010021",
             "relation": "description",
             "subj": "OATM030021"
         },
         {
-            "obj": "OATM010020",
+            "obj": "OATM010004",
             "relation": "is_a",
             "subj": "OATM010021"
+        },
+        {
+            "obj": "OATM010022",
+            "relation": "bool_question",
+            "subj": "OATM040022"
         },
         {
             "obj": "OATM010022",
@@ -806,9 +954,14 @@
             "subj": "OATM030022"
         },
         {
-            "obj": "OATM010020",
+            "obj": "OATM010005",
             "relation": "is_a",
             "subj": "OATM010022"
+        },
+        {
+            "obj": "OATM010023",
+            "relation": "bool_question",
+            "subj": "OATM040023"
         },
         {
             "obj": "OATM010023",
@@ -816,9 +969,14 @@
             "subj": "OATM030023"
         },
         {
-            "obj": "OATM010020",
+            "obj": "OATM010005",
             "relation": "is_a",
             "subj": "OATM010023"
+        },
+        {
+            "obj": "OATM010024",
+            "relation": "bool_question",
+            "subj": "OATM040024"
         },
         {
             "obj": "OATM010024",
@@ -826,7 +984,7 @@
             "subj": "OATM030024"
         },
         {
-            "obj": "OATM010020",
+            "obj": "OATM010005",
             "relation": "is_a",
             "subj": "OATM010024"
         },
@@ -836,62 +994,212 @@
             "subj": "OATM030025"
         },
         {
-            "obj": "OATM010020",
+            "obj": "OATM010026",
+            "relation": "description",
+            "subj": "OATM030026"
+        },
+        {
+            "obj": "OATM010025",
             "relation": "is_a",
-            "subj": "OATM010025"
+            "subj": "OATM010026"
         },
         {
-            "subj": "OATM010021",
-            "relation": "symptom_of",
-            "obj": "OATM010014"
+            "obj": "OATM010027",
+            "relation": "description",
+            "subj": "OATM030027"
         },
         {
-            "subj": "OATM010021",
-            "relation": "symptom_of",
-            "obj": "OATM010011"
+            "obj": "OATM010025",
+            "relation": "is_a",
+            "subj": "OATM010027"
         },
         {
-            "subj": "OATM010022",
+            "obj": "OATM010028",
+            "relation": "description",
+            "subj": "OATM030028"
+        },
+        {
+            "obj": "OATM010025",
+            "relation": "is_a",
+            "subj": "OATM010028"
+        },
+        {
+            "obj": "OATM010029",
+            "relation": "description",
+            "subj": "OATM030029"
+        },
+        {
+            "obj": "OATM010025",
+            "relation": "is_a",
+            "subj": "OATM010029"
+        },
+        {
+            "obj": "OATM010030",
+            "relation": "description",
+            "subj": "OATM030030"
+        },
+        {
+            "obj": "OATM010025",
+            "relation": "is_a",
+            "subj": "OATM010030"
+        },
+        {
+            "obj": "OATM010031",
+            "relation": "description",
+            "subj": "OATM030031"
+        },
+        {
+            "obj": "OATM010025",
+            "relation": "is_a",
+            "subj": "OATM010031"
+        },
+        {
+            "obj": "OATM010032",
+            "relation": "description",
+            "subj": "OATM030032"
+        },
+        {
+            "obj": "OATM010025",
+            "relation": "is_a",
+            "subj": "OATM010032"
+        },
+        {
+            "obj": "OATM010033",
+            "relation": "description",
+            "subj": "OATM030033"
+        },
+        {
+            "obj": "OATM010025",
+            "relation": "is_a",
+            "subj": "OATM010033"
+        },
+        {
+            "obj": "OATM010034",
+            "relation": "description",
+            "subj": "OATM030034"
+        },
+        {
+            "obj": "OATM010025",
+            "relation": "is_a",
+            "subj": "OATM010034"
+        },
+        {
+            "subj": "OATM010026",
             "relation": "symptom_of",
             "obj": "OATM010015"
         },
         {
-            "subj": "OATM010022",
-            "relation": "symptom_of",
-            "obj": "OATM010016"
-        },
-        {
-            "subj": "OATM010023",
-            "relation": "symptom_of",
-            "obj": "OATM010010"
-        },
-        {
-            "subj": "OATM010023",
-            "relation": "symptom_of",
-            "obj": "OATM010009"
-        },
-        {
-            "subj": "OATM010024",
-            "relation": "symptom_of",
-            "obj": "OATM010013"
-        },
-        {
-            "subj": "OATM010024",
+            "subj": "OATM010026",
             "relation": "symptom_of",
             "obj": "OATM010012"
         },
         {
-            "subj": "OATM010025",
+            "subj": "OATM010026",
+            "relation": "symptom_of",
+            "obj": "OATM010017"
+        },
+        {
+            "subj": "OATM010026",
+            "relation": "symptom_of",
+            "obj": "OATM010013"
+        },
+        {
+            "subj": "OATM010027",
+            "relation": "symptom_of",
+            "obj": "OATM010013"
+        },
+        {
+            "subj": "OATM010027",
+            "relation": "symptom_of",
+            "obj": "OATM010012"
+        },
+        {
+            "subj": "OATM010027",
+            "relation": "symptom_of",
+            "obj": "OATM010016"
+        },
+        {
+            "subj": "OATM010027",
+            "relation": "symptom_of",
+            "obj": "OATM010014"
+        },
+        {
+            "subj": "OATM010028",
             "relation": "symptom_of",
             "obj": "OATM010018"
         },
         {
-            "subj": "OATM010025",
+            "subj": "OATM010028",
             "relation": "symptom_of",
             "obj": "OATM010019"
         },
         {
-            "subj": "OATM040020",
+            "subj": "OATM010034",
+            "relation": "symptom_of",
+            "obj": "OATM010018"
+        },
+        {
+            "subj": "OATM010034",
+            "relation": "symptom_of",
+            "obj": "OATM010019"
+        },
+        {
+            "subj": "OATM010034",
+            "relation": "symptom_of",
+            "obj": "OATM010021"
+        },
+        {
+            "subj": "OATM010029",
+            "relation": "symptom_of",
+            "obj": "OATM010010"
+        },
+        {
+            "subj": "OATM010029",
+            "relation": "symptom_of",
+            "obj": "OATM010009"
+        },
+        {
+            "subj": "OATM010030",
+            "relation": "symptom_of",
+            "obj": "OATM010011"
+        },
+        {
+            "subj": "OATM010030",
+            "relation": "symptom_of",
+            "obj": "OATM010010"
+        },
+        {
+            "subj": "OATM010031",
+            "relation": "symptom_of",
+            "obj": "OATM010014"
+        },
+        {
+            "subj": "OATM010031",
+            "relation": "symptom_of",
+            "obj": "OATM010013"
+        },
+        {
+            "subj": "OATM010032",
+            "relation": "symptom_of",
+            "obj": "OATM010022"
+        },
+        {
+            "subj": "OATM010032",
+            "relation": "symptom_of",
+            "obj": "OATM010023"
+        },
+        {
+            "subj": "OATM010025",
+            "relation": "symptom_of",
+            "obj": "OATM010023"
+        },
+        {
+            "subj": "OATM010025",
+            "relation": "symptom_of",
+            "obj": "OATM010024"
+        },
+        {
+            "subj": "OATM040025",
             "relation": "question_for",
             "obj": "OATM010000"
         },
@@ -921,7 +1229,7 @@
             "obj": "OATM010005"
         },
         {
-            "subj": "OATM040021",
+            "subj": "OATM040026",
             "relation": "question_for",
             "obj": "OATM010003"
         },
@@ -941,7 +1249,7 @@
             "obj": "OATM010008"
         },
         {
-            "subj": "OATM040022",
+            "subj": "OATM040027",
             "relation": "question_for",
             "obj": "OATM010001"
         },
@@ -956,59 +1264,59 @@
             "obj": "OATM010010"
         },
         {
-            "subj": "OATM040023",
+            "subj": "OATM040028",
             "relation": "question_for",
             "obj": "OATM010002"
         },
         {
             "subj": "OATM050010",
             "relation": "answer_for",
-            "obj": "OATM010011"
+            "obj": "OATM010012"
         },
         {
             "subj": "OATM050011",
             "relation": "answer_for",
-            "obj": "OATM010012"
+            "obj": "OATM010013"
         },
         {
             "subj": "OATM050012",
             "relation": "answer_for",
-            "obj": "OATM010013"
+            "obj": "OATM010014"
         },
         {
-            "subj": "OATM040024",
+            "subj": "OATM040029",
             "relation": "question_for",
             "obj": "OATM010004"
         },
         {
             "subj": "OATM050013",
             "relation": "answer_for",
-            "obj": "OATM010015"
+            "obj": "OATM010018"
         },
         {
             "subj": "OATM050014",
             "relation": "answer_for",
-            "obj": "OATM010016"
+            "obj": "OATM010019"
         },
         {
             "subj": "OATM050015",
             "relation": "answer_for",
-            "obj": "OATM010017"
+            "obj": "OATM010020"
         },
         {
-            "subj": "OATM040025",
+            "subj": "OATM040030",
             "relation": "question_for",
             "obj": "OATM010005"
         },
         {
             "subj": "OATM050016",
             "relation": "answer_for",
-            "obj": "OATM010018"
+            "obj": "OATM010022"
         },
         {
             "subj": "OATM050017",
             "relation": "answer_for",
-            "obj": "OATM010019"
+            "obj": "OATM010023"
         }
     ]
 }
