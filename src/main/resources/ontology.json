@@ -491,7 +491,7 @@
     ],
     "edges": [
         {
-            "obj": "symptom",
+            "obj": "OATM010000",
             "relation": "bool_question",
             "subj": "OATM040000"
         },
@@ -501,7 +501,7 @@
             "subj": "OATM030000"
         },
         {
-            "obj": "ear_issue",
+            "obj": "OATM010001",
             "relation": "bool_question",
             "subj": "OATM040001"
         },
@@ -516,7 +516,7 @@
             "subj": "OATM010001"
         },
         {
-            "obj": "eye_issue",
+            "obj": "OATM010002",
             "relation": "bool_question",
             "subj": "OATM040002"
         },
@@ -531,7 +531,7 @@
             "subj": "OATM010002"
         },
         {
-            "obj": "mouth_issue",
+            "obj": "OATM010003",
             "relation": "bool_question",
             "subj": "OATM040003"
         },
@@ -546,7 +546,7 @@
             "subj": "OATM010003"
         },
         {
-            "obj": "nose_issue",
+            "obj": "OATM010004",
             "relation": "bool_question",
             "subj": "OATM040004"
         },
@@ -561,7 +561,7 @@
             "subj": "OATM010004"
         },
         {
-            "obj": "skin_issue",
+            "obj": "OATM010005",
             "relation": "bool_question",
             "subj": "OATM040005"
         },
@@ -576,7 +576,7 @@
             "subj": "OATM010005"
         },
         {
-            "obj": "cough",
+            "obj": "OATM010006",
             "relation": "bool_question",
             "subj": "OATM040006"
         },
@@ -591,7 +591,7 @@
             "subj": "OATM010006"
         },
         {
-            "obj": "jaw_pain",
+            "obj": "OATM010007",
             "relation": "bool_question",
             "subj": "OATM040007"
         },
@@ -606,7 +606,7 @@
             "subj": "OATM010007"
         },
         {
-            "obj": "sore_throat",
+            "obj": "OATM010008",
             "relation": "bool_question",
             "subj": "OATM040008"
         },
@@ -621,7 +621,7 @@
             "subj": "OATM010008"
         },
         {
-            "obj": "hearing_loss",
+            "obj": "OATM010009",
             "relation": "bool_question",
             "subj": "OATM040009"
         },
@@ -636,7 +636,7 @@
             "subj": "OATM010009"
         },
         {
-            "obj": "ear_ringing",
+            "obj": "OATM010010",
             "relation": "bool_question",
             "subj": "OATM040010"
         },
@@ -651,7 +651,7 @@
             "subj": "OATM010010"
         },
         {
-            "obj": "vision_loss",
+            "obj": "OATM010011",
             "relation": "bool_question",
             "subj": "OATM040011"
         },
@@ -666,7 +666,7 @@
             "subj": "OATM010011"
         },
         {
-            "obj": "eye_pain",
+            "obj": "OATM010012",
             "relation": "bool_question",
             "subj": "OATM040012"
         },
@@ -681,7 +681,7 @@
             "subj": "OATM010012"
         },
         {
-            "obj": "red_eyes",
+            "obj": "OATM010013",
             "relation": "bool_question",
             "subj": "OATM040013"
         },
@@ -696,7 +696,7 @@
             "subj": "OATM010013"
         },
         {
-            "obj": "patchy_spots_in_vision",
+            "obj": "OATM010014",
             "relation": "bool_question",
             "subj": "OATM040014"
         },
@@ -711,7 +711,7 @@
             "subj": "OATM010014"
         },
         {
-            "obj": "stuffy_nose",
+            "obj": "OATM010015",
             "relation": "bool_question",
             "subj": "OATM040015"
         },
@@ -726,7 +726,7 @@
             "subj": "OATM010015"
         },
         {
-            "obj": "runny_nose",
+            "obj": "OATM010016",
             "relation": "bool_question",
             "subj": "OATM040016"
         },
@@ -741,7 +741,7 @@
             "subj": "OATM010016"
         },
         {
-            "obj": "nose_bleed",
+            "obj": "OATM010017",
             "relation": "bool_question",
             "subj": "OATM040017"
         },
@@ -756,7 +756,7 @@
             "subj": "OATM010017"
         },
         {
-            "obj": "skin_rash",
+            "obj": "OATM010018",
             "relation": "bool_question",
             "subj": "OATM040018"
         },
@@ -771,7 +771,7 @@
             "subj": "OATM010018"
         },
         {
-            "obj": "itching",
+            "obj": "OATM010019",
             "relation": "bool_question",
             "subj": "OATM040019"
         },
