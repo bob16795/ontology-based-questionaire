@@ -24,6 +24,12 @@ public class Ontology2 {
     static ArrayList<Edge> allEdges;
     static ArrayList<Node> totalConditions;
 
+    Node currentNode;
+
+    boolean readyToSendQuestion;
+    String questionToSend;
+    String currentAnswer;
+
     public Ontology2() {
         totalConditions = allNodes=destNodes = undetermined = applicableConditions = determinedConditions = new ArrayList<>();
         allEdges = new ArrayList<>();
@@ -38,6 +44,75 @@ public class Ontology2 {
 
         parseJSON();
         System.out.println(allNodes);
+    }
+
+
+    public static JSONObject getQuestion(Node node) {
+        String question = "";
+        ArrayList<String> possibleResponses = new ArrayList<>();
+        //Get nodes question
+        for (Edge e : node.getEdges()) {
+            if (e.getRelation().equals("question_for")) {
+                 question = e.getDest().getID();
+                //TODO: add code for asking question + getting response
+            }
+            else if (e.getRelation().equals("is_a")) {
+                    //Get the node that e points to
+                    Node possibleNode = e.getDest();
+                    //Find the option node from possible node
+                    for (Edge possibleE : possibleNode.getEdges()) {
+                        if (possibleE.getRelation().equals("answer_for")) {
+                            possibleResponses.add(possibleE.getDest().getID());
+                        }
+                    }
+                }
+            }
+        JSONObject object = new JSONObject();
+        object.put("question", question);
+        object.put("choices", possibleResponses);
+
+        return object;
+    }
+
+    public Node travelDown(Node currentNode) {
+        //Iterate and make sure there are no "is_a" edges on the current node. If there aren't any, return the current node
+        boolean bottomOfGraph = true;
+        for (Edge e : currentNode.getEdges()) {
+            if (e.getRelation().equals("is_a")) {
+                bottomOfGraph = false;
+            }
+        }
+        if (bottomOfGraph) {
+            return currentNode;
+        }
+        //Iterate through the list of edges and find the questionFor edge
+        String response = null;
+
+        for (Edge e : currentNode.getEdges()) {
+            if (e.getRelation().equals("question_for")) {
+                this.questionToSend = e.getDest().getID();
+                this.readyToSendQuestion = true;
+                //TODO: add code for asking question + getting response
+            }
+        }
+        Node nextNode = null;
+        String answer_for = null;
+        for (Edge e : currentNode.getEdges()) {
+            if (e.getRelation().equals("is_a")) {
+                //Get the node that e points to
+                Node possibleNode = e.getDest();
+                //Find the option node from possible node
+                for (Edge possibleE : possibleNode.getEdges()) {
+                    if (possibleE.getRelation().equals("answer_for")) {
+                        answer_for = possibleE.getDest().getID();
+                        if (answer_for.equals(response)) {
+                            nextNode = possibleNode;
+                        };
+                    }
+                }
+            }
+        }
+        return travelDown(nextNode);
     }
 
     public static void parseJSON() {
@@ -68,10 +143,10 @@ public class Ontology2 {
 
             //Add edges to alledges array
             for (Object o : edges) {
-                JSONObject edgeObject = (JSONObject) obj;
+                JSONObject edgeObject = (JSONObject) o;
                 String source = (String) edgeObject.get("obj");
                 String dest = (String) edgeObject.get("subj");
-                String uri = (String) edgeObject.get("relation");
+                String relation = (String) edgeObject.get("relation");
 
                 //Use idAssigner to get a unique id for each edge
                 int id = idAssigner;
@@ -89,7 +164,7 @@ public class Ontology2 {
                     }
                 }
                 if (sourceNode != null && destNode != null) {
-                    allEdges.add(new Edge(sourceNode, destNode, id, uri));
+                    allEdges.add(new Edge(sourceNode, destNode, relation));
                 } else { throw new Exception(); }
             }
         } catch (ParseException ex) {
