@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 import json
 
 TITLE = "title"
@@ -176,7 +178,7 @@ for (parent, question), responses in QUESTIONS.items():
         last_response_id += 1
         output["edges"] += [{
             "subj": new_response_uri,
-            "relation": QUESTION_FOR,
+            "relation": ANSWER_FOR,
             "obj": lut[parent],
         }]
 

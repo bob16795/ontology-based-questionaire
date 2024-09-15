@@ -797,27 +797,27 @@
         },
         {
             "subj": "OATM050000",
-            "relation": "question_for",
+            "relation": "answer_for",
             "obj": "OATM010000"
         },
         {
             "subj": "OATM050001",
-            "relation": "question_for",
+            "relation": "answer_for",
             "obj": "OATM010000"
         },
         {
             "subj": "OATM050002",
-            "relation": "question_for",
+            "relation": "answer_for",
             "obj": "OATM010000"
         },
         {
             "subj": "OATM050003",
-            "relation": "question_for",
+            "relation": "answer_for",
             "obj": "OATM010000"
         },
         {
             "subj": "OATM050004",
-            "relation": "question_for",
+            "relation": "answer_for",
             "obj": "OATM010000"
         },
         {
@@ -827,17 +827,17 @@
         },
         {
             "subj": "OATM050005",
-            "relation": "question_for",
+            "relation": "answer_for",
             "obj": "OATM010003"
         },
         {
             "subj": "OATM050006",
-            "relation": "question_for",
+            "relation": "answer_for",
             "obj": "OATM010003"
         },
         {
             "subj": "OATM050007",
-            "relation": "question_for",
+            "relation": "answer_for",
             "obj": "OATM010003"
         },
         {
@@ -847,12 +847,12 @@
         },
         {
             "subj": "OATM050008",
-            "relation": "question_for",
+            "relation": "answer_for",
             "obj": "OATM010001"
         },
         {
             "subj": "OATM050009",
-            "relation": "question_for",
+            "relation": "answer_for",
             "obj": "OATM010001"
         },
         {
@@ -862,17 +862,17 @@
         },
         {
             "subj": "OATM050010",
-            "relation": "question_for",
+            "relation": "answer_for",
             "obj": "OATM010002"
         },
         {
             "subj": "OATM050011",
-            "relation": "question_for",
+            "relation": "answer_for",
             "obj": "OATM010002"
         },
         {
             "subj": "OATM050012",
-            "relation": "question_for",
+            "relation": "answer_for",
             "obj": "OATM010002"
         },
         {
@@ -882,17 +882,17 @@
         },
         {
             "subj": "OATM050013",
-            "relation": "question_for",
+            "relation": "answer_for",
             "obj": "OATM010004"
         },
         {
             "subj": "OATM050014",
-            "relation": "question_for",
+            "relation": "answer_for",
             "obj": "OATM010004"
         },
         {
             "subj": "OATM050015",
-            "relation": "question_for",
+            "relation": "answer_for",
             "obj": "OATM010004"
         },
         {
@@ -902,12 +902,12 @@
         },
         {
             "subj": "OATM050016",
-            "relation": "question_for",
+            "relation": "answer_for",
             "obj": "OATM010005"
         },
         {
             "subj": "OATM050017",
-            "relation": "question_for",
+            "relation": "answer_for",
             "obj": "OATM010005"
         }
     ]
