@@ -37,14 +37,14 @@ public class Deduction {
         this.activeNode = findMedian(bag);
     }
 
-    public String getNextQuestion() {
-        String question = "";
+    public Node getNextQuestion() {
+        Node node = null;
         for (Edge e : this.activeNode.getEdges()) {
             if (e.getRelation().equals("bool_question")) {
-                question = e.getDest().getID();
+                node = e.getDest();
             }
         }
-        return question;
+        return node;
     }
 
     public void determineAnswer(boolean answer) {
@@ -83,8 +83,10 @@ public class Deduction {
         }
 
         objects.sort((e1,e2)-> Integer.compare(e1.getValue(), e2.getValue()));
-
         int median = objects.size()/2;
+        if(bag.size()==1){
+            median = 0;
+        }
 
         return objects.get(median).getKey();
     }
